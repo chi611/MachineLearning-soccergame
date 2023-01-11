@@ -11,8 +11,11 @@ distributed under the License is distributed on an "AS IS" BASIS,
 WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
-*/
 
+修改項目:
+1.第175行的Heuristic函式。將
+2.第62行新增playerTag變數。用來辨識第幾位球員
+*/
 public enum Team
 {
     Blue = 0,
@@ -42,7 +45,6 @@ public class AgentSoccer : Agent
     // The coefficient for the reward for colliding with a ball. Set using curriculum.
     float m_BallTouch;
     public Position position;
-
     const float k_Power = 2000f;
     float m_Existential;
     float m_LateralSpeed;
@@ -55,9 +57,10 @@ public class AgentSoccer : Agent
     BehaviorParameters m_BehaviorParameters;
     public Vector3 initialPos;
     public float rotSign;
-
     EnvironmentParameters m_ResetParams;
 
+    public float playerTag;
+    
     public override void Initialize()
     {
         SoccerEnvController envController = GetComponentInParent<SoccerEnvController>();
@@ -172,33 +175,89 @@ public class AgentSoccer : Agent
     public override void Heuristic(in ActionBuffers actionsOut)
     {
         var discreteActionsOut = actionsOut.DiscreteActions;
-        //forward
-        if (Input.GetKey(KeyCode.W))
-        {
-            discreteActionsOut[0] = 1;
+        switch (playerTag){
+            case 1:
+                //forward
+                if (Input.GetKey(KeyCode.Q))
+                {
+                    discreteActionsOut[0] = 1;
+                }
+                if (Input.GetKey(KeyCode.W))
+                {
+                    discreteActionsOut[0] = 2;
+                }
+                //right
+                if (Input.GetKey(KeyCode.E))
+                {
+                    discreteActionsOut[1] = 1;
+                }
+                if (Input.GetKey(KeyCode.R))
+                {
+                    discreteActionsOut[1] = 2;
+                }
+            break;
+            case 2:
+                //forward
+                if (Input.GetKey(KeyCode.A))
+                {
+                    discreteActionsOut[0] = 1;
+                }
+                if (Input.GetKey(KeyCode.S))
+                {
+                    discreteActionsOut[0] = 2;
+                }
+                //right
+                if (Input.GetKey(KeyCode.D))
+                {
+                    discreteActionsOut[1] = 1;
+                }
+                if (Input.GetKey(KeyCode.F))
+                {
+                    discreteActionsOut[1] = 2;
+                }
+            break;
+            case 3:
+                //forward
+                if (Input.GetKey(KeyCode.Z))
+                {
+                    discreteActionsOut[0] = 1;
+                }
+                if (Input.GetKey(KeyCode.X))
+                {
+                    discreteActionsOut[0] = 2;
+                }
+                //right
+                if (Input.GetKey(KeyCode.C))
+                {
+                    discreteActionsOut[1] = 1;
+                }
+                if (Input.GetKey(KeyCode.V))
+                {
+                    discreteActionsOut[1] = 2;
+                }
+            break;
+            case 4:
+                //forward
+                if (Input.GetKey(KeyCode.T))
+                {
+                    discreteActionsOut[0] = 1;
+                }
+                if (Input.GetKey(KeyCode.Y))
+                {
+                    discreteActionsOut[0] = 2;
+                }
+                //right
+                if (Input.GetKey(KeyCode.U))
+                {
+                    discreteActionsOut[1] = 1;
+                }
+                if (Input.GetKey(KeyCode.I))
+                {
+                    discreteActionsOut[1] = 2;
+                }
+            break;                                    
         }
-        if (Input.GetKey(KeyCode.S))
-        {
-            discreteActionsOut[0] = 2;
-        }
-        //rotate
-        if (Input.GetKey(KeyCode.A))
-        {
-            discreteActionsOut[2] = 1;
-        }
-        if (Input.GetKey(KeyCode.D))
-        {
-            discreteActionsOut[2] = 2;
-        }
-        //right
-        if (Input.GetKey(KeyCode.E))
-        {
-            discreteActionsOut[1] = 1;
-        }
-        if (Input.GetKey(KeyCode.Q))
-        {
-            discreteActionsOut[1] = 2;
-        }
+
     }
     /// <summary>
     /// Used to provide a "kick" to the ball.
