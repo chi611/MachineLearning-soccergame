@@ -2,6 +2,7 @@ using UnityEngine;
 using Unity.MLAgents;
 using Unity.MLAgents.Actuators;
 using Unity.MLAgents.Policies;
+using Unity.MLAgents.Sensors;
 /*
 This work is based on https://github.com/Unity-Technologies/ml-agents, which is licensed under the Apache License, Version 2.0 (the "License").
 A copy of the License is available at http://www.apache.org/licenses/LICENSE-2.0
@@ -13,8 +14,12 @@ See the License for the specific language governing permissions and
 limitations under the License.
 
 修改項目:
-1.第175行的Heuristic函式。將
-2.第62行新增playerTag變數。用來辨識第幾位球員
+1.第194行的Heuristic函式。將按鍵輸入改為我的需求
+2.第67行新增playerTag變數。用來辨識第幾位球員
+3.第69~72行新增playerTag1~4 Transform。用來獲取球員位置
+4.第68行新增myTarget Transform。用來獲取足球位置
+5.第130行註解MoveAgent函式部分程式。關閉球員旋轉功能
+6.第120行新增CollectObservations函式。用來將unity部分資料傳至python
 */
 public enum Team
 {
@@ -60,7 +65,12 @@ public class AgentSoccer : Agent
     EnvironmentParameters m_ResetParams;
 
     public float playerTag;
-    
+    public Transform myTarget;
+    public Transform playerTag1;
+    public Transform playerTag2;
+    public Transform playerTag3;
+    public Transform playerTag4;
+
     public override void Initialize()
     {
         SoccerEnvController envController = GetComponentInParent<SoccerEnvController>();
@@ -107,7 +117,16 @@ public class AgentSoccer : Agent
 
         m_ResetParams = Academy.Instance.EnvironmentParameters;
     }
-
+    public override void CollectObservations(VectorSensor mysensor)
+    {
+        if (playerTag == 4){
+            mysensor.AddObservation(myTarget.position);
+            mysensor.AddObservation(playerTag1.position);
+            mysensor.AddObservation(playerTag2.position);
+            mysensor.AddObservation(playerTag3.position);
+            mysensor.AddObservation(playerTag4.position);
+        }
+    }
     public void MoveAgent(ActionSegment<int> act)
     {
         var dirToGo = Vector3.zero;
@@ -129,7 +148,7 @@ public class AgentSoccer : Agent
                 dirToGo = transform.forward * -m_ForwardSpeed;
                 break;
         }
-
+        
         switch (rightAxis)
         {
             case 1:
@@ -139,7 +158,7 @@ public class AgentSoccer : Agent
                 dirToGo = transform.right * -m_LateralSpeed;
                 break;
         }
-
+        /*
         switch (rotateAxis)
         {
             case 1:
@@ -148,7 +167,7 @@ public class AgentSoccer : Agent
             case 2:
                 rotateDir = transform.up * 1f;
                 break;
-        }
+        }*/
 
         transform.Rotate(rotateDir, Time.deltaTime * 100f);
         agentRb.AddForce(dirToGo * m_SoccerSettings.agentRunSpeed,
