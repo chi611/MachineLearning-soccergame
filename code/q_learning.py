@@ -6,10 +6,10 @@ Q Learning Algorithm
 
 import numpy as np
 import pandas as pd
-
+import os
 
 class QLearning:
-
+    model_name = "model_data_testV15.csv"
     def __init__(self, actions, learning_rate=0.01, discount_factor=0.9, e_greedy=0.1):
         self.actions = actions  # action 列表
         self.lr = learning_rate  # 學習速率
@@ -19,7 +19,6 @@ class QLearning:
 
     def check_state_exist(self, state):
         if state not in self.q_table.index:
-
             self.q_table = self.q_table.append(
                 pd.Series(
                     [0] * len(self.actions),
@@ -55,7 +54,6 @@ class QLearning:
         # print(flag)
 
         q_predict = self.q_table.loc[s, a]  # 根據 Q 表得到的 （predict）值
-
         if s_ != 'terminal':  # state 不是 终止
             q_target = r + self.gamma * self.q_table.loc[s_, :].max()
         else:
@@ -63,18 +61,16 @@ class QLearning:
 
         # 更新 Q 表中 state_action 的數值
         self.q_table.loc[s, a] += self.lr * (q_target - q_predict)
-        if flag == 1:
-            print('重複state')
-            print(self.q_table.loc[s, :])
 
     def save(self):
-        self.q_table.to_csv("model_data.csv", index=True)
+        self.q_table.to_csv(self.model_name, index=True)
         print('save data')
         print(self.q_table)
 
     def read(self):
-        self.q_table = pd.read_csv("model_data.csv")
-        self.q_table.index
-        self.q_table.set_index("Unnamed: 0", inplace=True)
+        if os.path.isfile(self.model_name):
+            self.q_table = pd.read_csv(self.model_name)
+            self.q_table.index
+            self.q_table.set_index("Unnamed: 0", inplace=True)
         print(self.q_table)
         print('read data')
