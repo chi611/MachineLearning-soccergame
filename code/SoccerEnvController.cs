@@ -10,8 +10,10 @@ distributed under the License is distributed on an "AS IS" BASIS,
 WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
-*/
 
+修改項目:
+1.修改第139行，將球員旋轉角度80~100則一，改為固定90度
+*/
 public class SoccerEnvController : MonoBehaviour
 {
     [System.Serializable]
@@ -134,7 +136,7 @@ public class SoccerEnvController : MonoBehaviour
         {
             var randomPosX = Random.Range(-5f, 5f);
             var newStartPos = item.Agent.initialPos + new Vector3(randomPosX, 0f, 0f);
-            var rot = item.Agent.rotSign * Random.Range(80.0f, 100.0f);
+            var rot = item.Agent.rotSign * Random.Range(90.0f, 90.0f);
             var newRot = Quaternion.Euler(0, rot, 0);
             item.Agent.transform.SetPositionAndRotation(newStartPos, newRot);
 
