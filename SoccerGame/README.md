@@ -1,6 +1,7 @@
-*遊戲下載教學
-Current status at a glance:
+*遊戲下載教學  
+
+
+
 ```
-Unity version: 2018.3.8f1
-Platforms    : Windows (client and server) and Linux (server only)
+git clone -b SoccerGame --single-branch https://github.com/chi611/MachineLearning-soccergame.git 
 ```
