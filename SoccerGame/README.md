@@ -40,5 +40,19 @@ pip install protobuf==3.20.0
 ```
 ![image](https://user-images.githubusercontent.com/76472326/211971580-daf2ff26-bebe-4ede-ac25-3811054099a4.png)
 
+8.下載pandas。
+```
+pip install pandas==1.4.2 
+```
+![image](https://user-images.githubusercontent.com/76472326/211972815-d715054f-8725-46f3-bb47-388ce975df09.png)
 
+9.下載keyboard
+```
+pip install keyboard==0.13.5 
+```
+![image](https://user-images.githubusercontent.com/76472326/211973030-68496eee-b79c-490c-a8a5-04337cb77024.png)
   
+  
+
+
+
