@@ -27,11 +27,11 @@ venv\Scripts\activate
 ![image](https://user-images.githubusercontent.com/76472326/211971194-0e271d85-bc36-46d0-844b-b9a8d436ec16.png)
 
 
-6.下載gym_unity。
+6.下載gym_unity。(有更新)
 ```
-pip install gym_unity==0.15.0 
+pip install gym_unity==0.28.0 
 ```
-![image](https://user-images.githubusercontent.com/76472326/211971282-58926dd4-8f12-4073-ac21-b60c74453a29.png)
+![image](https://user-images.githubusercontent.com/76472326/211975296-5e260864-afa9-4081-ac01-c8fabc63029a.png)
 
   
 7.降低protobuf版本。
