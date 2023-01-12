@@ -19,20 +19,27 @@
 ## MSC  
 ![MSC_20230111 drawio](https://user-images.githubusercontent.com/76472326/212070689-fa10fa8a-e3cb-4177-a9de-5a942dc4fe50.png)
 
-## 問題紀錄
+# 決策流程圖
+![image](https://user-images.githubusercontent.com/76472326/212078212-76524dc5-dccd-4bdd-856d-b5099faf90ce.png)
+
+# 團隊貢獻
+![image](https://user-images.githubusercontent.com/76472326/212078379-8656f9f6-9e05-414e-b7fe-ac4892c9d925.png)
+![image](https://user-images.githubusercontent.com/76472326/212078418-5fd862cd-7072-4f1b-9f03-8d28b6bf1e70.png)
+
+# 問題紀錄
 * [2022/11/03](https://github.com/chi611/machine-learning/tree/main/HW3/%E5%95%8F%E9%A1%8C%E7%B4%80%E9%8C%84#20221103)
 * [2022/11/10](https://github.com/chi611/machine-learning/tree/main/HW3/%E5%95%8F%E9%A1%8C%E7%B4%80%E9%8C%84#20221110)
 * [2022/11/17](https://github.com/chi611/machine-learning/tree/main/HW3/%E5%95%8F%E9%A1%8C%E7%B4%80%E9%8C%84#20221117)
 * [2022/11/24](https://github.com/chi611/machine-learning/tree/main/HW3/%E5%95%8F%E9%A1%8C%E7%B4%80%E9%8C%84#20221124)
 * [2022/12/01](https://github.com/chi611/machine-learning/tree/main/HW3/%E5%95%8F%E9%A1%8C%E7%B4%80%E9%8C%84#20221201)
 * [2022/12/08](https://github.com/chi611/machine-learning/tree/main/HW3/%E5%95%8F%E9%A1%8C%E7%B4%80%E9%8C%84#20221208)
-## 參考資料
+# 參考資料
 [Unity SoccerGame(本次專案使用的opensource)](https://virajvaitha.medium.com/unity-ml-agents-2022-installation-e8af1eab2dd)  
 [ML Agents安裝裝流程](https://www.bilibili.com/video/BV1hE411W7Pi/?spm_id_from=333.999.0.0)  
 [Unity製作會踢球的AI教學](https://www.bilibili.com/video/BV1hQ4y1K7V4/?spm_id_from=333.999.0.0)  
 [Python與unity溝通](https://blog.csdn.net/Alibutter/article/details/120908687)  
 [Unity場景轉換為gym環境](https://blog.csdn.net/Alibutter/article/details/120908687)  
 
-## 相關連結
+# 相關連結
 [Unity其他版本下載](https://unity3d.com/get-unity/download/archive?_ga=2.89622808.2003652693.1667886882-131146576.1667388786)  
 [ML Agents下載](https://github.com/Unity-Technologies/ml-agents/releases/tag/release_19)  
