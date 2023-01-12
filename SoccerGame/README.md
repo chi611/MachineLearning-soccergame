@@ -10,7 +10,7 @@ git clone -b SoccerGame --single-branch https://github.com/chi611/MachineLearnin
 ![image](https://user-images.githubusercontent.com/76472326/211968362-a5c4444f-9257-4e1a-8dc7-a9cf3b44101a.png)
 
   
-3.下載python，本次範例是下載3.8.10的python。[python安裝](https://www.python.org/downloads/windows/)
+3.下載python，本次範例是下載3.8.10的python。[python安裝](https://www.python.org/downloads/windows/)  
 ![image](https://user-images.githubusercontent.com/76472326/211969503-134ce125-0c97-4bf2-a4a3-fd991b9e51ad.png)
   
 4.新建一個python環境。
