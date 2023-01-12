@@ -2,7 +2,13 @@
 # SoccerGame
 
 組長:陳陽棋  
+1.負責本次Unity SoccerGame的遊戲製作(透過Unity mlagent官方的遊戲根據需求來做改良)
+2.每週報告的PPT製作與報告主講人
+3.本次專案的Git製作
 組員:曾梓維
+1.本次專案機器學習q-learning的coding
+2.Unity與python溝通環境建立  
+
 # 文件說明
 * [API資料夾](https://github.com/chi611/MachineLearning-soccergame/tree/master/API):各版本python程式碼的輸出入與參數說明
 * [MSC資料夾](https://github.com/chi611/MachineLearning-soccergame/tree/master/MSC):各版本python程式碼時序分析
