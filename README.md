@@ -4,7 +4,7 @@
 組長:陳陽棋  
 組員:曾梓維
 # 文件說明
-* API資料夾:各版本python程式碼的輸出入與參數說明
+* [API](https://github.com/chi611/MachineLearning-soccergame/tree/master/API)資料夾:各版本python程式碼的輸出入與參數說明
 * MSC資料夾:各版本python程式碼時序分析
 * SoccerGame資料夾:下載本專案遊戲檔案
 * code資料夾:程式碼控管
