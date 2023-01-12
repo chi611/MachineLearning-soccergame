@@ -27,8 +27,11 @@
 * [2022/12/01](https://github.com/chi611/machine-learning/tree/main/HW3/%E5%95%8F%E9%A1%8C%E7%B4%80%E9%8C%84#20221201)
 * [2022/12/08](https://github.com/chi611/machine-learning/tree/main/HW3/%E5%95%8F%E9%A1%8C%E7%B4%80%E9%8C%84#20221208)
 ## 參考資料
+[Unity SoccerGame(本次專案使用的opensource)](https://virajvaitha.medium.com/unity-ml-agents-2022-installation-e8af1eab2dd)  
 [ML Agents安裝裝流程](https://www.bilibili.com/video/BV1hE411W7Pi/?spm_id_from=333.999.0.0)  
 [Unity製作會踢球的AI教學](https://www.bilibili.com/video/BV1hQ4y1K7V4/?spm_id_from=333.999.0.0)  
+[Python與unity溝通](https://blog.csdn.net/Alibutter/article/details/120908687)  
+[Unity場景轉換為gym環境](https://blog.csdn.net/Alibutter/article/details/120908687)  
 
 ## 相關連結
 [Unity其他版本下載](https://unity3d.com/get-unity/download/archive?_ga=2.89622808.2003652693.1667886882-131146576.1667388786)  
