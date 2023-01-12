@@ -57,4 +57,5 @@ pip install keyboard==0.13.5
 ```
 python main.py
 ```
+![image](https://user-images.githubusercontent.com/76472326/211984318-c20e20ad-7bae-4dd8-8398-76dda1d5f9be.png)
 
