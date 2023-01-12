@@ -8,8 +8,10 @@ import numpy as np
 import pandas as pd
 import os
 
+
 class QLearning:
-    model_name = "model_data_testV15.csv"
+    model_name = "Model\\model_final.csv"
+
     def __init__(self, actions, learning_rate=0.01, discount_factor=0.9, e_greedy=0.1):
         self.actions = actions  # action 列表
         self.lr = learning_rate  # 學習速率
@@ -31,7 +33,6 @@ class QLearning:
         else:
             flag = 1
             return flag
-
 
     # 根據 state 來決定 action
     def choose_action(self, state):
@@ -62,12 +63,12 @@ class QLearning:
         # 更新 Q 表中 state_action 的數值
         self.q_table.loc[s, a] += self.lr * (q_target - q_predict)
 
-    def save(self):
+    def q_table_save(self):
         self.q_table.to_csv(self.model_name, index=True)
         print('save data')
         print(self.q_table)
 
-    def read(self):
+    def q_table_read(self):
         if os.path.isfile(self.model_name):
             self.q_table = pd.read_csv(self.model_name)
             self.q_table.index

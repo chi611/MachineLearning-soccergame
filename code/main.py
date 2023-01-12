@@ -8,6 +8,7 @@ from gym_unity.envs import UnityToGymWrapper
 from mlagents_envs.environment import UnityEnvironment
 from q_learning import QLearning
 import keyboard
+
 # 控制球員 藍1 紫1 藍2 紫2
 # 0為手動操作 1為AI操作
 player = [0, 1, 0, 1]
@@ -26,20 +27,14 @@ max_step = 1000
 # 單場最大步數
 max_step_per_episode = 200
 
-
-
-
 # 動作輸入鍵位 藍1 紫1 藍2
-action_d = [['q', 'w', 'r', 'e'], ['s', 'a', 'd', 'f'], ['z', 'x', 'v', 'c']]
-
-
+action_d = [['q', 'w', 'r', 'e'], ['x', 'z', 'c', 'v'], ['z', 'x', 'v', 'c']]
 
 cnt = 0
 if __name__ == '__main__':
     total_step = 0
-    env_path = "C:\\Users\\ZI-WEI\\Desktop\\RL_shoot_game-master\\Q_learning_Ver3\\export_final_V3\\soccergame_final.exe"
-
-
+    env_path = "C:\\Users\\ZI-WEI\\Desktop\\RL_shoot_game-master\\Q_learning_Ver3\\export_final_V4\\soccergame_final" \
+               ".exe "
 
     print('input_sus')
     unity_env = UnityEnvironment(env_path,
@@ -50,12 +45,11 @@ if __name__ == '__main__':
     env = UnityToGymWrapper(unity_env, allow_multiple_obs=True)
 
     time_cnt = 0
-    RL = QLearning(actions=list(['u', 'd', 'l', 'r']))
+    Q = QLearning(actions=list(['u', 'd', 'l', 'r']))
     action = 'u'
-    RL.read()
+    Q.q_table_read()
     times_cnt = 0
     while total_step < max_step:
-
 
         state_re = env.reset()
         current_ep_reward = 0
@@ -98,14 +92,14 @@ if __name__ == '__main__':
         for a in range(4):
             # state = 自己位置減球的位置
             state[a] = [round((state_x[a] - state_x[4]), decimal), round((state_z[a] - state_z[4]), decimal)]
-            state_d[a] = state_[a][0]**2 + state_[a][1]**2
+            state_d[a] = state_[a][0] ** 2 + state_[a][1] ** 2
 
         action = {}
 
         for t in range(1, max_step_per_episode + 1):
             # 選擇1~4號球員動作
             for i in range(4):
-                action[i] = RL.choose_action(str(state[i]))
+                action[i] = Q.choose_action(str(state[i]))
             # print('選動作')
             for i in range(4):
                 # 動作由字串轉為數字輸入
@@ -139,7 +133,7 @@ if __name__ == '__main__':
             for i in range(4):
                 # 動作由字串轉為數字輸入
                 if i <= 2 and player[i] == 1:
-                    if action[i] == 'u' :
+                    if action[i] == 'u':
                         keyboard.release(action_d[i][0])
                     elif action[i] == 'd':
                         keyboard.release(action_d[i][1])
@@ -176,11 +170,11 @@ if __name__ == '__main__':
             # print('----------------')
             for a in range(4):
                 state_[a] = [round((state_x[a] - state_x[4]), decimal), round((state_z[a] - state_z[4]), decimal)]
-                state_d_[a] = state_[a][0]**2 + state_[a][1]**2
+                state_d_[a] = state_[a][0] ** 2 + state_[a][1] ** 2
                 if done:
                     reward_q[a] = 0
 
-                elif (state_d_[a]**0.5) <= 5:  # 球員靠很近時判斷射門方向
+                elif (state_d_[a] ** 0.5) <= 5:  # 球員靠很近時判斷射門方向
                     if state_x[4] > state_x[a]:
                         if state_d_[a] < state_d[a]:
                             reward_q[a] = 200
@@ -191,7 +185,7 @@ if __name__ == '__main__':
                             reward_q[a] = 200
                         else:
                             reward_q[a] = -20
-                elif state_x[4]-3 > state_x[a]:
+                elif state_x[4] - 3 > state_x[a]:
                     if abs(state_z[a] - state_z[4]) < 3:
                         if state_d_[a] >= state_d[a]:
                             reward_q[a] = 200
@@ -214,17 +208,18 @@ if __name__ == '__main__':
                         reward_q[a] = 200
                 if reward_q[a] > 0:
                     print('好結果')
-                if abs(state_z[a] - state_z[4]) < 3 and state_x[4]-3 > state_x[a]:
+                if abs(state_z[a] - state_z[4]) < 3 and state_x[4] - 3 > state_x[a]:
                     if state_z_last[a] - state_z[a] > 0:
                         new_action = 'r'
                     else:
                         new_action = 'l'
-                elif abs(state_z[a] - state_z[4]) > 1 and state_x[4]-3 < state_x[a]:
+                elif abs(state_z[a] - state_z[4]) > 1 and state_x[4] - 3 < state_x[a]:
                     if state_z_last[a] - state_z[a] > 0:
                         new_action = 'r'
                     else:
                         new_action = 'l'
-                elif abs(state_x_last[a] - state_x[a]) > abs(state_z_last[a] - state_z[a]) and abs(state_x_last[a] - state_x[4]) >= 0:
+                elif abs(state_x_last[a] - state_x[a]) > abs(state_z_last[a] - state_z[a]) and abs(
+                        state_x_last[a] - state_x[4]) >= 0:
                     if state_x_last[a] - state_x[a] > 0:
                         new_action = 'd'
                     else:
@@ -235,10 +230,9 @@ if __name__ == '__main__':
                     else:
                         new_action = 'l'
 
-
                 # 更新Q表
                 if player[a] == 1:
-                    RL.learn(str(state[a]), new_action, reward_q[a], str(state_[a]))
+                    Q.learn(str(state[a]), new_action, reward_q[a], str(state_[a]))
             state_x_last = state_x.copy()
             state_z_last = state_z.copy()
             state_d = state_d_.copy()
@@ -247,11 +241,8 @@ if __name__ == '__main__':
 
             times_cnt = times_cnt + 1
             if times_cnt >= 100:
-                RL.save()
+                Q.q_table_save()
                 times_cnt = 0
-
-
 
             if done:
                 break
-
