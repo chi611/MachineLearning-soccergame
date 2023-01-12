@@ -5,18 +5,19 @@
 組員:曾梓維
 # 專案架構
 ## 分析
-![分析_20221207 drawio](https://user-images.githubusercontent.com/76472326/209062628-a0260247-d838-4a50-82ab-5cf4cbbb65d5.png)
+![分析_20230111 drawio](https://user-images.githubusercontent.com/76472326/212070576-d3f19980-3a0f-41ef-bdbd-ec58b8ce412e.png)
 ## 設計  
-![設計 drawio_20221228](https://user-images.githubusercontent.com/76472326/209900832-3441ffff-0e38-4735-8bbc-f16e0a3fa0d9.png)
+![設計 drawio_20230111](https://user-images.githubusercontent.com/76472326/212070644-8de259fb-90a1-440e-b297-502930a04d96.png)
 ## MSC  
-![MSC_20221130 drawio](https://user-images.githubusercontent.com/76472326/209062716-bfcd69df-8a40-4dfb-a951-0dc3084cc4d2.png)
+![MSC_20230111 drawio](https://user-images.githubusercontent.com/76472326/212070689-fa10fa8a-e3cb-4177-a9de-5a942dc4fe50.png)
 
 ## 需求
-* [需求-驗收](https://github.com/chi611/machine-learning/tree/main/HW3/%E9%9C%80%E6%B1%82#%E9%9C%80%E6%B1%82-%E9%A9%97%E6%94%B6)
-* [需求-功能](https://github.com/chi611/machine-learning/tree/main/HW3/%E9%9C%80%E6%B1%82#%E9%9C%80%E6%B1%82-%E5%8A%9F%E8%83%BD)
-* [需求-效能](https://github.com/chi611/machine-learning/tree/main/HW3/%E9%9C%80%E6%B1%82#%E9%9C%80%E6%B1%82-%E6%95%88%E8%83%BD)
-* [需求-介面](https://github.com/chi611/machine-learning/tree/main/HW3/%E9%9C%80%E6%B1%82#%E9%9C%80%E6%B1%82-%E4%BB%8B%E9%9D%A2)
-* [需求-限制](https://github.com/chi611/machine-learning/tree/main/HW3/%E9%9C%80%E6%B1%82#%E9%9C%80%E6%B1%82-%E9%99%90%E5%88%B6)
+![需求-驗收](https://user-images.githubusercontent.com/76472326/212071100-c684131f-c761-4b58-8152-bcb074bfa737.png)
+![需求-功能](https://user-images.githubusercontent.com/76472326/212071146-69664ae2-36a2-4935-9fd3-be7103eedfa7.png)
+![需求-效能](https://user-images.githubusercontent.com/76472326/212071109-a5409349-7ffa-4f2d-83f8-4f9e74c9850d.png)
+![需求-介面](https://user-images.githubusercontent.com/76472326/212071171-1b7c3f8e-ab2b-4ad1-9de0-df4b2dfc1358.png)
+![需求-限制](https://user-images.githubusercontent.com/76472326/212071182-96623874-6be1-4034-acf7-01622005a210.png)
+
 ## 分析
 * [分析(2022/11/09)](https://github.com/chi611/machine-learning/tree/main/HW3/%E5%88%86%E6%9E%90#%E5%88%86%E6%9E%9020221109)
 * [分析(2022/11/16)](https://github.com/chi611/machine-learning/tree/main/HW3/%E5%88%86%E6%9E%90#%E5%88%86%E6%9E%9020221116)
