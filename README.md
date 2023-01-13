@@ -30,8 +30,8 @@ cd MachineLearning-soccergame/ml-agents
 ```
 pip install -e .
 ```
-![image](https://user-images.githubusercontent.com/76472326/212284699-180262f3-1605-439a-a813-7badf906bd52.png)
-...
+![image](https://user-images.githubusercontent.com/76472326/212284699-180262f3-1605-439a-a813-7badf906bd52.png)  
+密密麻麻一大串...  
 ![image](https://user-images.githubusercontent.com/76472326/212284802-6483dc1b-fe6b-486d-bcf7-bc1b919daefb.png)
 
 ## 6.下載gym_unity。  
