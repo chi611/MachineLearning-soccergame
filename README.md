@@ -30,9 +30,9 @@ cd MachineLearning-soccergame/ml-agents-release_19/ml-agents
 ```
 pip install -e .
 ```
-![image](https://user-images.githubusercontent.com/76472326/212284699-180262f3-1605-439a-a813-7badf906bd52.png)  
+![image](https://user-images.githubusercontent.com/76472326/212308217-d3a030b7-ce36-4ca7-a24a-3ca4af32a073.png)
 密密麻麻一大串...  
-![image](https://user-images.githubusercontent.com/76472326/212284802-6483dc1b-fe6b-486d-bcf7-bc1b919daefb.png)
+![image](https://user-images.githubusercontent.com/76472326/212308273-02f51eee-4563-4d74-a273-074d53a0404f.png)
 
 ## 6.下載gym_unity。  
 此時會跳錯誤訊息，是因為我們ml-agents套件是0.28.0，但因為有些套件gym_unity 0.20.0才有，所以我們gym_unity先下載0.20.0再升到0.28.0。
