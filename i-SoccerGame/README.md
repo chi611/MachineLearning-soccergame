@@ -4,7 +4,7 @@
 ```
 git clone -b SoccerGame --single-branch https://github.com/chi611/MachineLearning-soccergame.git 
 ```
-![image](https://user-images.githubusercontent.com/76472326/212310689-c915dbe2-7a23-4f11-8ab3-5cbe2637cd8a.png)
+![image](https://user-images.githubusercontent.com/76472326/212313651-fbdced04-e8e4-4d93-9204-f6c700b77442.png)
   
 ## 2.點開資料夾可看到這些檔案，並於路徑中輸入"cmd"。  
 ![image](https://user-images.githubusercontent.com/76472326/212310767-e369fd0b-624d-44d3-ad25-dcd9100beac3.png)
