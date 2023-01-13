@@ -65,13 +65,13 @@ class QLearning:
 
     def q_table_save(self):
         self.q_table.to_csv(self.model_name, index=True)
-        print('save data')
-        print(self.q_table)
+        #print('save data')
+        #print(self.q_table)
 
     def q_table_read(self):
         if os.path.isfile(self.model_name):
             self.q_table = pd.read_csv(self.model_name)
             self.q_table.index
             self.q_table.set_index("Unnamed: 0", inplace=True)
-        print(self.q_table)
-        print('read data')
+        #print(self.q_table)
+        #print('read data')
