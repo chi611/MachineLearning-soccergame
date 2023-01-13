@@ -34,7 +34,8 @@ pip install -e .
 ...
 ![image](https://user-images.githubusercontent.com/76472326/212284802-6483dc1b-fe6b-486d-bcf7-bc1b919daefb.png)
 
-## 6.下載gym_unity 0.20.0，此時會跳錯誤訊息，是因為我們ml-agents套件是0.28.，但因為有些套件gym_unity 0.20.0才有，所以我們先下載0.20.0再升到0.28.0。
+## 6.下載gym_unity。  
+此時會跳錯誤訊息，是因為我們ml-agents套件是0.28.0，但因為有些套件gym_unity 0.20.0才有，所以我們gym_unity先下載0.20.0再升到0.28.0。
 ```
 pip install gym_unity==0.20.0 
 ```
@@ -46,13 +47,15 @@ pip install gym_unity==0.28.0
 ```
 ![image](https://user-images.githubusercontent.com/76472326/212285569-9794b808-7f5f-4da8-8e1b-441bf645e05f.png)
 
-## 8.下載pandas套件供我們SoccerGame Q-learning查表用。
+## 8.下載pandas套件  
+用來供我們SoccerGame Q-learning查表用。
 ```
 pip install pandas==1.4.2 
 ```
 ![image](https://user-images.githubusercontent.com/76472326/212285777-494d66c0-79bc-42fa-896a-0daee92054b2.png)
 
-## 9..keyboard套件透過python輸出鍵盤按鍵來操作unity。
+## 9..keyboard套件  
+透過python輸出鍵盤按鍵來操作unity。
 ```
 pip install keyboard==0.13.5 
 ```
