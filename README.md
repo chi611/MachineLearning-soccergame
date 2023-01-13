@@ -10,7 +10,7 @@ python -m venv SoccerGame-env
 ```
 SoccerGame-env\Scripts\activate
 ```
-![image](https://user-images.githubusercontent.com/76472326/212280113-e25f0f3a-4181-4eb5-97e0-ac9a29c21ef0.png)
+![image](https://user-images.githubusercontent.com/76472326/212280113-e25f0f3a-4181-4eb5-97e0-ac9a29c21ef0.png)  
 ![image](https://user-images.githubusercontent.com/76472326/212280142-0536eabb-ff36-45b3-aeb1-3021b95a3a80.png)
 
 
