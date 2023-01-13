@@ -22,9 +22,9 @@ git clone -b package --single-branch https://github.com/chi611/MachineLearning-s
 
 ## 4.進入套件的位置準備進行安裝。
 ```
-cd MachineLearning-soccergame/ml-agents
+cd MachineLearning-soccergame/ml-agents-release_19/ml-agents
 ```
-![image](https://user-images.githubusercontent.com/76472326/212282944-f125ad6e-41e4-423b-871d-a71efdc117b0.png)
+![image](https://user-images.githubusercontent.com/76472326/212308014-d33467cf-48cf-4186-a5d2-30542382772f.png)
 
 ## 5.開始安裝ml-agents套件。
 ```
