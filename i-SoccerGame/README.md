@@ -7,7 +7,7 @@ git clone -b SoccerGame --single-branch https://github.com/chi611/MachineLearnin
 ![image](https://user-images.githubusercontent.com/76472326/212310689-c915dbe2-7a23-4f11-8ab3-5cbe2637cd8a.png)
   
 ## 2.點開資料夾可看到這些檔案，並於路徑中輸入"cmd"。  
-![image](https://user-images.githubusercontent.com/76472326/212301777-fca198fd-dcf2-4d51-b170-de9a35fc0d99.png)  
+![image](https://user-images.githubusercontent.com/76472326/212310767-e369fd0b-624d-44d3-ad25-dcd9100beac3.png)
 ![image](https://user-images.githubusercontent.com/76472326/212302063-10000a45-5962-4e99-8d9a-72321af43c62.png)
 
 ## 3.進入SoccerGame環境中。
