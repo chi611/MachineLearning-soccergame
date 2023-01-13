@@ -61,7 +61,9 @@ pip install keyboard==0.13.5
 ```
 ![image](https://user-images.githubusercontent.com/76472326/212286055-787c416f-d608-46a5-851b-3c76653f9782.png)
 
-## 此時SoccerGame所需套件已全數安裝完畢，接下來就可以去執行我們SoccerGame的python程式，記得要先進入我們安裝好的環境，再到main.py的位置去執行python
+此時SoccerGame所需套件已全數安裝完畢，接下來就可以去執行我們SoccerGame的python程式，記得要先進入我們安裝好的環境，再到main.py的位置去執行python
 ```
 SoccerGame-env\Scripts\activate
 ```
+PS:這段指令需與附圖相對的位置才能執行  
+![image](https://user-images.githubusercontent.com/76472326/212288609-ab7050b3-b281-4f30-892d-370845475e29.png)
