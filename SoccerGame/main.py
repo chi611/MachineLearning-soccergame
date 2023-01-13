@@ -33,9 +33,9 @@ action_d = [['q', 'w', 'r', 'e'], ['x', 'z', 'c', 'v'], ['z', 'x', 'v', 'c']]
 cnt = 0
 if __name__ == '__main__':
     total_step = 0
-    env_path = ".\\SoccerGame\\soccergame_final.exe "
+    env_path = "soccergame_final.exe "
 
-    print('input_sus')
+    #print('input_sus')
     unity_env = UnityEnvironment(env_path,
                                  base_port=5000,
                                  seed=0,
@@ -87,7 +87,7 @@ if __name__ == '__main__':
         state_ = [[0] * row for _ in range(column)]
         state_d = {}
         state_d_ = {}
-        print('重設')
+        #print('重設')
         for a in range(4):
             # state = 自己位置減球的位置
             state[a] = [round((state_x[a] - state_x[4]), decimal), round((state_z[a] - state_z[4]), decimal)]
@@ -205,8 +205,10 @@ if __name__ == '__main__':
                     reward_q[a] = 100
                     if state_d[a] - state_d_[a] > 6:
                         reward_q[a] = 200
-                if reward_q[a] > 0:
-                    print('好結果')
+                #if reward_q[a] > 0:
+                #    print('好結果')
+                    
+                    
                 if abs(state_z[a] - state_z[4]) < 3 and state_x[4] - 3 > state_x[a]:
                     if state_z_last[a] - state_z[a] > 0:
                         new_action = 'r'
