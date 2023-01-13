@@ -14,11 +14,11 @@ SoccerGame-env\Scripts\activate
 ![image](https://user-images.githubusercontent.com/76472326/212280142-0536eabb-ff36-45b3-aeb1-3021b95a3a80.png)
 
 
-## 3.將ml-agents套件安裝置電腦。
+## 3.將ml-agents套件安裝置電腦。[官網下載連結](https://github.com/Unity-Technologies/ml-agents/releases/tag/release_19)
 ```
 git clone -b package --single-branch https://github.com/chi611/MachineLearning-soccergame.git 
 ```
-![image](https://user-images.githubusercontent.com/76472326/212280470-4799ca34-afe8-46bb-a050-bcb78e9abe9f.png)
+![image](https://user-images.githubusercontent.com/76472326/212307760-18186446-0e5f-4535-9195-354c14b901e4.png)
 
 ## 4.進入套件的位置準備進行安裝。
 ```
