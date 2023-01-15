@@ -11,15 +11,16 @@
 2.Unity與python溝通環境建立  
 
 # 文件說明
-* [API](https://github.com/chi611/MachineLearning-soccergame/tree/master/API):各版本python程式碼的輸出入與參數說明
-* [MSC](https://github.com/chi611/MachineLearning-soccergame/tree/master/MSC):各版本python程式碼時序分析
-* [SoccerGame](https://github.com/chi611/MachineLearning-soccergame/tree/master/SoccerGame):下載本專案遊戲檔案
-* [code](https://github.com/chi611/MachineLearning-soccergame/tree/master/code):程式碼控管
-* [分析](https://github.com/chi611/MachineLearning-soccergame/tree/master/%E5%88%86%E6%9E%90):各版本足球遊戲分析架構
-* [問題紀錄](https://github.com/chi611/MachineLearning-soccergame/tree/master/%E5%95%8F%E9%A1%8C%E7%B4%80%E9%8C%84):於課堂報告後老師與同學提出的問題
-* [期末報告](https://github.com/chi611/MachineLearning-soccergame/tree/master/%E6%9C%9F%E6%9C%AB%E5%A0%B1%E5%91%8A):足球遊戲最終版本的PPT
-* [設計](https://github.com/chi611/MachineLearning-soccergame/tree/master/%E8%A8%AD%E8%A8%88):各版本python程式碼模組間的溝通
-* [需求](https://github.com/chi611/MachineLearning-soccergame/tree/master/%E9%9C%80%E6%B1%82):本次足球遊戲專案需求  
+* [需求](https://github.com/chi611/MachineLearning-soccergame/tree/master/a-%E9%9C%80%E6%B1%82):本次足球遊戲專案需求  
+* [分析](https://github.com/chi611/MachineLearning-soccergame/tree/master/b-%E5%88%86%E6%9E%90):各版本足球遊戲分析架構
+* [設計](https://github.com/chi611/MachineLearning-soccergame/tree/master/c-%E8%A8%AD%E8%A8%88):各版本python程式碼模組間的溝通
+* [MSC](https://github.com/chi611/MachineLearning-soccergame/tree/master/d-MSC):各版本python程式碼時序分析
+* [API](https://github.com/chi611/MachineLearning-soccergame/tree/master/e-API):各版本python程式碼的輸出入與參數說明
+* [code](https://github.com/chi611/MachineLearning-soccergame/tree/master/f-code):程式碼控管
+* [問題紀錄](https://github.com/chi611/MachineLearning-soccergame/tree/master/g-%E5%95%8F%E9%A1%8C%E7%B4%80%E9%8C%84):於課堂報告後老師與同學提出的問題
+* [期末報告](https://github.com/chi611/MachineLearning-soccergame/tree/master/h-%E6%9C%9F%E6%9C%AB%E5%A0%B1%E5%91%8A):足球遊戲最終版本的PPT
+* [SoccerGame](https://github.com/chi611/MachineLearning-soccergame/tree/master/i-SoccerGame):下載本專案遊戲檔案
+* [package](https://github.com/chi611/MachineLearning-soccergame/tree/master/j-package):下載本專案遊戲環境的檔案
 
 # 需求
 ![需求-驗收](https://user-images.githubusercontent.com/76472326/212071100-c684131f-c761-4b58-8152-bcb074bfa737.png)
